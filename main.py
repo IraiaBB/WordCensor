@@ -7,10 +7,10 @@ def collect_text():
     while entry is not "":       # loop for entering text until the user press Intro without characters
         entry = entry.strip()    # remove spaces before and after the text
 
-        for letter in entry:     # analyze letter by letter
-            if letter is "." or letter is "?" or letter is "!":   # main punctuation signs
-                i = entry.index(letter)                           # find the character's index
-                sentences.append(entry[:i + 1])                   # append the sentence to the list
+        for character in entry:     # analyze letter by letter
+            if character is "." or character is "?" or character is "!":   # main punctuation signs
+                i = entry.index(character)                           # find the character's index
+                sentences.append(entry[:i + 1].strip())                   # append the sentence to the list
                 entry = entry[i + 1:]                             # remove appended sentence from the text
 
         entry = input("Do you wish to add more text? If not just press Intro")      # option to add another paragraph
