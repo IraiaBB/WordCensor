@@ -9,6 +9,9 @@ or more text (in the previous step), just leaves the input empty and presses `In
 3. Remove sentences with censored words. With consecutive `for` loops, each sentence is analyzed by checking if the words of the list are present. If they are,
 the sentence is removed from the list.     
 4. Finally the text is displayed in lines. Every 40 characters the new line alert turns True and, when a space is found, that line is stored in a new list. At the end,
-the result is shown in the console with a `for` an a simple `print()` statement.
+the result is shown in the console with a `for` an a simple `print()` statement.       
+
+An example of insertion and output:    
+!["Sample output"](output.JPG)
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
